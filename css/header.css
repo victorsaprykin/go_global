@@ -64,6 +64,27 @@
   border: 1px solid #000;
 }
 
+@media (max-width: 1280px) {
+  .navigation__link {
+    font-size: 18px;
+  }
+
+   .navigation__list {
+    gap: 20px;
+  }
+
+    .header__btn {
+    padding: 10px 26px;
+    font-weight: 700;
+    font-size: 18px;
+   }
+
+  .header__btn:active {
+  padding: 12px 28px;
+}
+
+}
+
 @media (max-width: 1050px) {
   .header {
     padding-top: 22px;
@@ -71,27 +92,6 @@
 
   .navigation {
     margin-right: 48px;
-  }
-
-  .navigation__link {
-    font-size: 18px;
-  }
-
-  .navigation__list {
-    gap: 20px;
-  }
-
-  .header__btn {
-    padding: 10px 26px;
-    font-weight: 700;
-    font-size: 18px;
-    color: var(--main-color);
-    line-height: 1.36364;
-    text-transform: uppercase;
-    border: 3px solid var(--accent-border);
-    background-color: transparent;
-    border-radius: 10px;
-    transition: background-color 0.3s ease-in-out;
   }
 }
 

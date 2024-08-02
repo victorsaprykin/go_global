@@ -32,9 +32,9 @@
 
 .form__fieldset-hall {
   margin-bottom: 60px;
-  display: flex;
-  justify-content: space-between;
-  gap: 60px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 56px;
 }
 
 .form__hall {
@@ -49,7 +49,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 250px;
+  max-width: 250px;
   height: 55px;
   flex-grow: 1;
   font-weight: 700;
@@ -199,7 +199,7 @@
   display: flex;
   justify-content: space-between;
   gap: 44px;
-  width: 980px;
+  max-width: 980px;
 }
 
 .form__choice-input {
@@ -291,7 +291,7 @@
   margin: 0 auto;
   display: flex;
   justify-content: end;
-  width: 980px;
+  max-width: 980px;
 }
 
 .form__btn {
@@ -354,7 +354,7 @@ fieldset {
   }
 
   .form__label-hall {
-    width: unset;
+    padding: 10px 20px;
     height: 44px;
     font-size: 20px;
     border-radius: 6px;
@@ -394,6 +394,12 @@ fieldset {
   }
 }
 
+@media (max-width: 1024px) {
+  .form__label-hall {
+    height: 44px;
+  }
+}
+
 @media (max-width: 956px) {
   .booking {
     padding-top: 56px;
@@ -415,11 +421,12 @@ fieldset {
 
   .form__label-hall {
     font-size: 16px;
+    max-width: 150px;
+    height: 38px;
   }
 
   .form__choice-fieldset {
     flex-wrap: wrap;
-    width: unset;
     gap: 33px;
   }
 
@@ -477,6 +484,20 @@ fieldset {
   }
 }
 
+@media (max-width: 734px) {
+  .form__fieldset-hall {
+    margin-bottom: 28px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px 20px;
+  }
+  .form__label-hall {
+    font-size: 14px;
+    max-width: none;
+    width: 100%;
+    height: 30px;
+  }
+}
+
 @media (max-width: 656px) {
   .booking {
     padding-top: 33px;
@@ -492,20 +513,8 @@ fieldset {
     font-size: 14px;
   }
 
-  .form__fieldset-hall {
-    margin-bottom: 28px;
-    flex-wrap: wrap;
-    gap: 16px 20px;
-  }
-
-  .form__label-hall {
-    font-size: 14px;
-    width: 46%;
-    height: 30px;
-  }
-
   .form__fun {
-    margin-bottom: 34px;
+    margin-bottom: 26px;
     gap: 36px;
   }
 

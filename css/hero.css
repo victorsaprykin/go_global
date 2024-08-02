@@ -144,7 +144,6 @@
 
   .hero__title {
     margin-bottom: 16px;
-    /* font-size: 120px; */
   }
 
   .hero__content {
@@ -193,8 +192,13 @@
   .hero__down {
     width: 67px;
     height: 67px;
-    right: 55%;
+    right: 50%;
     bottom: 46px;
+  }
+
+  .hero__down svg {
+    width: 67px;
+    height: 67px;
   }
 }
 

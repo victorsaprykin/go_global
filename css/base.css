@@ -92,6 +92,7 @@ section {
   padding: 50px 0;
 }
 
+
 input[type='number']::-webkit-inner-spin-button,
 input[type='number']::-webkit-outer-spin-button {
   -webkit-appearance: none;
@@ -128,10 +129,12 @@ input[type='number']::-webkit-outer-spin-button {
 }
 
 .container {
-  padding: 0 15px;
+  padding: 0 130px;
   margin: 0 auto;
-  max-width: 1210px;
+  max-width: 1440px;
 }
+
+
 
 .section-title {
   margin-bottom: 40px;
@@ -142,16 +145,27 @@ input[type='number']::-webkit-outer-spin-button {
   text-align: center;
 }
 
+@media (max-width: 1280px) {
+  .logo {
+    margin-right: 0;
+    max-width: 87px;
+    height: 55px;
+  }
+  
+}
+
 @media (max-width: 1024px) {
   section {
     padding: 44px 0;
   }
 
   .logo {
-    display: block;
-    margin-right: 50px;
-    max-width: 87px;
-    height: 55px;
+    margin-right: 48px;
+  }
+
+  .container {
+    padding: 0 60px;
+    max-width: 1024px;
   }
 
   .section-title {
@@ -166,6 +180,10 @@ input[type='number']::-webkit-outer-spin-button {
 }
 
 @media (max-width: 880px) {
+  .container {
+    padding: 0 40px;
+  }
+
   .menu {
     display: inline-block;
     margin-right: 106px;
@@ -182,6 +200,9 @@ input[type='number']::-webkit-outer-spin-button {
 }
 
 @media (max-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
   .logo {
     margin-right: 128px;
   }
@@ -204,7 +225,17 @@ input[type='number']::-webkit-outer-spin-button {
     padding-bottom: 46px;
   }
 
+  .container {
+    padding: 0 20px;
+  }
+
   .section-title {
     font-size: 14px;
+  }
+}
+
+@media (max-width: 320px) {
+  .container {
+    max-width: 320px;
   }
 }
